@@ -1,49 +1,34 @@
-const menuToggle = document.getElementById('menuToggle');
-const mainNav = document.getElementById('mainNav');
-const cartCount = document.getElementById('cartCount');
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
 const toast = document.getElementById('toast');
 
-menuToggle.addEventListener('click', () => {
-  const open = mainNav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', open);
+hamburger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 
-document.querySelectorAll('.main-nav a').forEach(link => {
-  link.addEventListener('click', () => mainNav.classList.remove('open'));
-});
-
-let count = 0;
-document.querySelectorAll('.add-cart').forEach(button => {
-  button.addEventListener('click', () => {
-    count += 1;
-    cartCount.textContent = count;
-    toast.textContent = `${button.dataset.product} added to your collection`;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 1800);
+mobileNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
   });
 });
 
 document.getElementById('searchBtn').addEventListener('click', () => {
-  toast.textContent = 'Search is ready for product integration.';
+  toast.textContent = 'Product search can be connected here.';
   toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 1800);
-});
-
-document.getElementById('bagBtn').addEventListener('click', () => {
-  toast.textContent = count ? `${count} item${count > 1 ? 's' : ''} in your bag` : 'Your bag is empty';
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 1800);
+  setTimeout(() => toast.classList.remove('show'), 1700);
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, {threshold: .12});
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));

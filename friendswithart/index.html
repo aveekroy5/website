@@ -1,210 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Friends With Art — Handmade resin accessories made with real flowers and memories.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Friends With Art — handmade resin accessories created with real flowers and memories.">
   <title>Friends With Art | Handmade Resin Accessories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Friends With Art home">
-        <img src="assets/logo.jpg" alt="Friends With Art logo">
-      </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+<header class="header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#home"><img src="assets/logo.jpg" alt="Friends With Art"></a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#categories">Coasters</a>
+      <a href="#categories">Bookmarks</a>
+      <a href="#categories">Art &amp; Decor</a>
+      <a href="#story">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="search-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <a href="https://www.instagram.com/_friendswithart_/" target="_blank" rel="noopener" class="insta-btn" aria-label="Instagram">◎</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <i></i><i></i><i></i>
       </button>
+    </div>
+  </div>
 
-      <nav class="main-nav" id="mainNav">
-        <a class="active" href="#home">Home</a>
-        <a href="#categories">Coasters</a>
-        <a href="#categories">Bookmarks</a>
-        <a href="#categories">Art &amp; Decor</a>
-        <a href="#story">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#categories">Coasters</a>
+    <a href="#categories">Bookmarks</a>
+    <a href="#categories">Art &amp; Decor</a>
+    <a href="#story">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-      <div class="nav-actions">
-        <button class="icon-btn" aria-label="Search" id="searchBtn">⌕</button>
-        <button class="icon-btn bag" aria-label="Shopping bag" id="bagBtn">♧<span id="cartCount">0</span></button>
-        <a class="icon-btn instagram" href="https://www.instagram.com/_friendswithart_/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-layout">
+    <div class="hero-content reveal">
+      <div class="small-label">HANDMADE RESIN ACCESSORIES</div>
+      <h1>🌸 Handmade Resin Accessories 🌸</h1>
+      <h2>💐 Got a flower too precious to fade?</h2>
+      <p class="magic">✨ We'll turn it into forever magic! 💖</p>
+      <p class="hero-description">Real flowers. Real memories.<br>Handcrafted pieces to cherish, always.</p>
+      <div class="hero-cta">
+        <a class="button primary" href="#featured">Explore Collection <span>→</span></a>
+        <a class="button secondary" href="#contact">Custom Orders</a>
+      </div>
+      <div class="promise-list">
+        <div><b>❧</b><span>Real Preserved<br>Flowers</span></div>
+        <div><b>♡</b><span>Handmade<br>with Care</span></div>
+        <div><b>✦</b><span>Unique<br>One-of-a-kind</span></div>
+        <div><b>♢</b><span>Perfect<br>for Gifting</span></div>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Handmade with real flowers</p>
-          <h1>🌸 Handmade<br>Resin Accessories 🌸</h1>
-          <p class="hero-question">💐 Got a flower too precious to fade?</p>
-          <p class="hero-magic">✨ We'll turn it into forever magic! 💖</p>
-          <p class="hero-sub">Real flowers. Real memories.<br>Handcrafted pieces to cherish, always.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#featured">Explore Collection <span>→</span></a>
-            <a class="btn btn-outline" href="#contact">Custom Orders</a>
-          </div>
-          <div class="trust-row">
-            <div><strong>❧</strong><span>Real Preserved<br>Flowers</span></div>
-            <div><strong>♧</strong><span>Handmade<br>with Care</span></div>
-            <div><strong>♢</strong><span>Perfect<br>for Gifting</span></div>
-            <div><strong>✦</strong><span>Unique<br>One-of-a-kind Pieces</span></div>
-          </div>
-        </div>
-
-        <div class="hero-image reveal">
-          <img src="assets/hero-products.jpg" alt="Handmade floral resin accessories">
-          <div class="hero-stamp">REAL FLOWERS<br><span>REAL MEMORIES</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section categories" id="categories">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Explore our collections</p>
-          <h2>Shop by Category</h2>
-          <p>Handcrafted pieces, inspired by nature.</p>
-        </div>
-
-        <div class="category-grid">
-          <a class="category-card reveal" href="#featured">
-            <img src="assets/coasters.jpg" alt="Floral resin coasters">
-            <div><h3>Coasters</h3><p>Bring nature to your space</p><span>→</span></div>
-          </a>
-          <a class="category-card reveal" href="#featured">
-            <img src="assets/bookmarks.jpg" alt="Floral resin bookmarks">
-            <div><h3>Bookmarks</h3><p>A page full of nature</p><span>→</span></div>
-          </a>
-          <a class="category-card reveal" href="#featured">
-            <img src="assets/art-decor.jpg" alt="Floral resin art and decor">
-            <div><h3>Art &amp; Decor</h3><p>Wear and display nature</p><span>→</span></div>
-          </a>
-          <a class="category-card reveal" href="#featured">
-            <img src="assets/gift-sets.jpg" alt="Floral resin gift sets">
-            <div><h3>Gift Sets</h3><p>Perfect for every occasion</p><span>→</span></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section featured" id="featured">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Handpicked favourites</p>
-          <h2>Featured Creations</h2>
-          <p>Little pieces of nature, made to last.</p>
-        </div>
-
-        <div class="product-grid">
-          <article class="product-card reveal">
-            <div class="product-image"><img src="assets/sunflower-coaster.jpg" alt="Sunflower coaster"><button class="add-cart" data-product="Sunflower Coaster">+</button></div>
-            <div class="product-info"><h3>Sunflower Coaster</h3><strong>₹750</strong></div>
-          </article>
-          <article class="product-card reveal">
-            <div class="product-image"><img src="assets/pink-coaster.jpg" alt="Pink bloom coaster"><button class="add-cart" data-product="Pink Bloom Coaster">+</button></div>
-            <div class="product-info"><h3>Pink Bloom Coaster</h3><strong>₹750</strong></div>
-          </article>
-          <article class="product-card reveal">
-            <div class="product-image"><img src="assets/floral-bookmark.jpg" alt="Floral bookmark"><button class="add-cart" data-product="Floral Bookmark">+</button></div>
-            <div class="product-info"><h3>Floral Bookmark</h3><strong>₹450</strong></div>
-          </article>
-          <article class="product-card reveal">
-            <div class="product-image"><img src="assets/heart-pendant.jpg" alt="Heart pendant"><button class="add-cart" data-product="Heart Pendant">+</button></div>
-            <div class="product-info"><h3>Heart Pendant</h3><strong>₹650</strong></div>
-          </article>
-          <article class="product-card reveal">
-            <div class="product-image"><img src="assets/earrings.jpg" alt="Botanical earrings"><button class="add-cart" data-product="Botanical Earrings">+</button></div>
-            <div class="product-info"><h3>Botanical Earrings</h3><strong>₹550</strong></div>
-          </article>
-          <article class="product-card reveal">
-            <div class="product-image"><img src="assets/blue-bookmark.jpg" alt="Blue bloom bookmark"><button class="add-cart" data-product="Blue Bloom Bookmark">+</button></div>
-            <div class="product-info"><h3>Blue Bloom Bookmark</h3><strong>₹450</strong></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="story section" id="story">
-      <div class="container story-grid">
-        <div class="story-copy reveal">
-          <p class="eyebrow">Our Story</p>
-          <h2>A little bit of nature,<br>a lot of love.</h2>
-          <p>Friendswithart is a celebration of nature, art and the little moments that make life beautiful. Each piece is handcrafted with real, preserved flowers — turning fleeting blooms into timeless accessories and keepsakes.</p>
-          <a class="btn btn-primary" href="#contact">Read More <span>→</span></a>
-        </div>
-        <div class="story-image reveal"><img src="assets/story.jpg" alt="Crafting preserved flowers in resin"></div>
-        <div class="story-note">Real<br>Flowers<br><span>Real</span><br>Memories<br>Forever<br>Yours ♡</div>
-      </div>
-    </section>
-
-    <section class="benefits">
-      <div class="container benefits-grid">
-        <div><span>❧</span><p>Real Preserved<br>Flowers</p></div>
-        <div><span>♡</span><p>Handmade<br>with Care</p></div>
-        <div><span>✦</span><p>Unique<br>One-of-a-kind Pieces</p></div>
-        <div><span>♧</span><p>Custom &amp;<br>Bulk Orders</p></div>
-        <div><span>❧</span><p>Perfect<br>for Gifting</p></div>
-      </div>
-    </section>
-
-    <section class="section gallery-section">
-      <div class="container">
-        <div class="gallery-head reveal">
-          <div><p class="eyebrow">A glimpse of our handmade creations</p><h2>Gallery</h2></div>
-          <a class="btn btn-outline" href="https://www.instagram.com/_friendswithart_/" target="_blank" rel="noopener">◎ Follow on Instagram →</a>
-        </div>
-        <div class="gallery-grid">
-          <img class="reveal" src="assets/sunflower-coaster.jpg" alt="Floral coaster">
-          <img class="reveal" src="assets/bookmarks.jpg" alt="Floral bookmarks">
-          <img class="reveal" src="assets/earrings.jpg" alt="Botanical earrings">
-          <img class="reveal" src="assets/hero-products.jpg" alt="Resin accessories">
-          <img class="reveal" src="assets/floral-bookmark.jpg" alt="Floral bookmark">
-          <img class="reveal" src="assets/heart-pendant.jpg" alt="Heart pendant">
-          <img class="reveal" src="assets/pink-coaster.jpg" alt="Pink floral coaster">
-        </div>
-      </div>
-    </section>
-
-    <section class="custom-cta" id="contact">
-      <div class="container custom-inner">
-        <div>
-          <p class="eyebrow">Made especially for you</p>
-          <h2>Have a special flower or a custom idea?</h2>
-          <p>Let's create something meaningful together.</p>
-        </div>
-        <a class="btn btn-light" href="mailto:hello@friendswithart.in">Custom Orders →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.jpg" alt="Friends With Art">
-        <p>Resin Floral Accessories</p>
-      </div>
-      <div class="footer-links">
-        <a href="#home">Home</a><a href="#categories">Coasters</a><a href="#categories">Bookmarks</a>
-        <a href="#categories">Art &amp; Decor</a><a href="#story">About</a><a href="#contact">Contact</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/_friendswithart_/" target="_blank" rel="noopener">◎ Instagram</a>
-        <a href="mailto:hello@friendswithart.in">✉ Email</a>
-      </div>
+    <div class="hero-photo reveal">
+      <img src="assets/hero.jpg" alt="Floral resin accessories">
+      <div class="photo-badge">REAL FLOWERS<br><small>REAL MEMORIES</small></div>
     </div>
-    <div class="container copyright">
-      <span>© <span id="year"></span> Friendswithart. All rights reserved.</span>
-      <span>Handmade with ❤️ in India</span>
+  </div>
+</section>
+
+<section class="section categories" id="categories">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="small-label">EXPLORE OUR COLLECTIONS</div>
+      <h2>Shop by Category</h2>
+      <p>Handcrafted pieces, inspired by nature.</p>
     </div>
-  </footer>
 
-  <div class="toast" id="toast" role="status"></div>
+    <div class="category-grid">
+      <a class="category-card reveal" href="#featured"><img src="assets/coasters.jpg" alt="Resin floral coasters"><span><b>Coasters</b><small>Bring nature to your space</small></span><i>→</i></a>
+      <a class="category-card reveal" href="#featured"><img src="assets/bookmarks.jpg" alt="Resin floral bookmarks"><span><b>Bookmarks</b><small>A page full of nature</small></span><i>→</i></a>
+      <a class="category-card reveal" href="#featured"><img src="assets/decor.jpg" alt="Floral art and decor"><span><b>Art &amp; Decor</b><small>Wear and display nature</small></span><i>→</i></a>
+      <a class="category-card reveal" href="#featured"><img src="assets/gifts.jpg" alt="Floral gift sets"><span><b>Gift Sets</b><small>Perfect for every occasion</small></span><i>→</i></a>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="section featured" id="featured">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="small-label">HANDPICKED FAVOURITES</div>
+      <h2>Featured Creations</h2>
+      <p>Little pieces of nature, made to last.</p>
+    </div>
+
+    <div class="product-grid">
+      <article class="product reveal"><img src="assets/sunflower.jpg" alt="Sunflower Coaster"><div><h3>Sunflower Coaster</h3><strong>₹750</strong></div></article>
+      <article class="product reveal"><img src="assets/pink-bloom.jpg" alt="Pink Bloom Coaster"><div><h3>Pink Bloom Coaster</h3><strong>₹750</strong></div></article>
+      <article class="product reveal"><img src="assets/bookmark.jpg" alt="Floral Bookmark"><div><h3>Floral Bookmark</h3><strong>₹450</strong></div></article>
+      <article class="product reveal"><img src="assets/pendant.jpg" alt="Heart Pendant"><div><h3>Heart Pendant</h3><strong>₹650</strong></div></article>
+      <article class="product reveal"><img src="assets/earrings.jpg" alt="Botanical Earrings"><div><h3>Botanical Earrings</h3><strong>₹550</strong></div></article>
+      <article class="product reveal"><img src="assets/blue-bookmark.jpg" alt="Blue Bloom Bookmark"><div><h3>Blue Bloom Bookmark</h3><strong>₹450</strong></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="container story-layout">
+    <div class="story-copy reveal">
+      <div class="small-label">OUR STORY</div>
+      <h2>A little bit of nature,<br>a lot of love.</h2>
+      <p>Friendswithart is a celebration of nature, art and the little moments that make life beautiful. Each piece is handcrafted with real, preserved flowers — turning fleeting blooms into timeless accessories and keepsakes.</p>
+      <a class="button primary" href="#contact">Discover Our Story <span>→</span></a>
+    </div>
+    <div class="story-photo reveal"><img src="assets/story.jpg" alt="Handcrafted floral resin artwork"></div>
+    <div class="story-card reveal">Real<br>Flowers<br><em>Real</em><br>Memories<br>Forever<br>Yours ♡</div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="container values-grid">
+    <div><b>❧</b><span>Real Preserved<br>Flowers</span></div>
+    <div><b>♡</b><span>Handmade<br>with Care</span></div>
+    <div><b>✦</b><span>Unique<br>One-of-a-kind Pieces</span></div>
+    <div><b>♧</b><span>Custom &amp;<br>Bulk Orders</span></div>
+    <div><b>❧</b><span>Perfect<br>for Gifting</span></div>
+  </div>
+</section>
+
+<section class="section gallery">
+  <div class="container">
+    <div class="gallery-heading reveal">
+      <div>
+        <div class="small-label">A GLIMPSE OF OUR HANDMADE CREATIONS</div>
+        <h2>From flower to forever.</h2>
+      </div>
+      <a class="button secondary" href="https://www.instagram.com/_friendswithart_/" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+
+    <div class="gallery-mosaic">
+      <figure class="g1 reveal"><img src="assets/gallery-1.jpg" alt="Friends With Art floral creation"></figure>
+      <figure class="g2 reveal"><img src="assets/gallery-2.jpg" alt="Handmade resin accessories"></figure>
+      <figure class="g3 reveal"><img src="assets/gallery-3.jpg" alt="Floral accessories"></figure>
+      <figure class="g4 reveal"><img src="assets/gallery-4.jpg" alt="Preserved flower coasters"></figure>
+      <figure class="g5 reveal"><img src="assets/gallery-5.jpg" alt="Nature inspired resin art"></figure>
+      <figure class="g6 reveal"><img src="assets/gallery-6.jpg" alt="Handmade resin pieces"></figure>
+      <figure class="g7 reveal"><img src="assets/gallery-7.jpg" alt="Floral keepsakes"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="custom" id="contact">
+  <div class="container custom-inner">
+    <div>
+      <div class="small-label">MADE ESPECIALLY FOR YOU</div>
+      <h2>Have a special flower<br>or a custom idea?</h2>
+      <p>Let's create something meaningful together.</p>
+    </div>
+    <a class="button light" href="mailto:hello@friendswithart.in">Start a Custom Order →</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <img src="assets/logo.jpg" alt="Friends With Art">
+      <p>Resin Floral Accessories</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#categories">Coasters</a><a href="#categories">Bookmarks</a><a href="#categories">Art &amp; Decor</a><a href="#story">About</a><a href="#contact">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <a href="https://www.instagram.com/_friendswithart_/" target="_blank" rel="noopener">◎ Instagram</a>
+      <a href="mailto:hello@friendswithart.in">✉ Email</a>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> Friendswithart. All rights reserved.</span><span>Handmade with ❤️ in India</span></div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
 </body>
 </html>
